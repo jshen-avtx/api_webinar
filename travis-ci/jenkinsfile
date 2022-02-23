@@ -1,5 +1,11 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+        dockerfile {
+            filename 'Dockerfile'
+            dir 'travis-ci'
+            label 'latest'
+        }
+     }
 
     stages{
         stage('build'){

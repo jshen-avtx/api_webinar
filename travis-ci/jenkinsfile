@@ -3,7 +3,7 @@ pipeline {
         dockerfile {
             filename 'Dockerfile'
             dir 'travis-ci'
-            label 'smoke||ec2'
+            label 'ec2'
         }
      }
 
